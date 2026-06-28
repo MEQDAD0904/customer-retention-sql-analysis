@@ -1,118 +1,92 @@
-Customer Behavior & Retention Analysis
-Project Overview :
-This project analyzes customer behavior to understand revenue drivers and identify potential retention issues.
-The analysis focuses on:
-- Customer purchase patterns
-- Repeat behavior
-- Revenue distribution across customers
-- Identifying risks affecting long-term growth
-______________________________________________
-Objectives :
-- Measure customer retention
-- Identify repeat vs one-time customers
-- Understand revenue dependency
-- Provide actionable business insights
-_________________________________________
-Dataset :
-The dataset includes:
-- Orders
-- Order_Items
-- Customers
-- Payments
-- Products
-_________________________________________
-Key Questions :
-1. Do customers return after their first purchase?
-2. What percentage of customers are repeat buyers?
-3. Is revenue driven by loyal customers or new customers?
-4. Are there patterns indicating retention issues?
-_________________________________________
-Data Preparation :
-- Handled missing values
-- Converted date columns to proper format
-_________________________________________
-Key Metrics :
-- Total Customers
-- Total Orders
-- Total Revenue
-- Repeat Customers
-- Repeat Rate
-- Average Order Value (AOV)
-_________________________________________
-Key Findings :
-1. Extremely Low Retention
-- ~96.88% of customers are one-time buyers
-- Repeat rate is approximately 3%
+ # Customer Behavior & Retention Analysis
 
-2. Revenue Driven by Acquisition
-- Revenue growth is primarily driven by new customers
-- Returning customers contribute minimally
+> ⚠️ **Note:** This was an early exploratory project focused on customer behavior only.  
+> It was later connected to the revenue analysis to tell a more complete story:  
+> 👉 [TheLook E-Commerce — Customer Retention Analysis](https://github.com/MEQDAD0904/thelook-ecommerce-customer-retention-analysis-)
 
-3. Customer Behavior Pattern
-- Distribution shows the majority of customers place only one order
-- Even high-value customers do not return
+---
 
-4. Potential Risk
+## What This Project Is
 
-- The business relies heavily on continuous customer acquisition
-- This indicates unsustainable growth
-______________________________________________
-Root Cause Analysis :
-1. Delivery Issues 
-- Presence of undelivered orders
-- Missing delivery timestamps
-Impact:
-- Poor delivery experience may reduce repeat purchases
+A focused SQL and Power BI analysis on one question:
 
-2. One-Time Purchase Products
-- Most customers purchase only once
-- No repeat behavior even among high spenders
-Impact:
-- Product nature may not encourage repeat buying
+**Do customers come back after their first purchase — and what does that mean for revenue?**
 
-3. Lack of Retention Strategy
-- Extremely low repeat rate (~3%)
-Impact:
-- No loyalty programs or engagement strategies
-______________________________________________
-Key Insights :
-- Customer retention is critically low
-- Revenue depends on new customers, not loyalty
-- Customer behavior is non-recurring
-- Growth is not sustainable in the long term
-______________________________________________
-Recommendations :
-1. Improve Customer Retention
-- Implement loyalty programs
-- Offer discounts for repeat purchases
+This was exploratory work. No hypothesis framework was used. The goal was to understand customer behavior patterns before connecting them to revenue impact.
 
-2. Enhance Post-Purchase Experience
-- Improve delivery performance
-- Provide better customer support
+---
 
-3. Retarget Customers
+## What I Analyzed
 
-- Email campaigns
-- Personalized offers
+- Repeat vs. one-time buyer ratio
+- Revenue dependency on new vs. returning customers
+- Customer order distribution
+- Early signals of retention risk
 
-4. Focus on Repeatable Products
+---
 
-- Promote products with higher repeat potential
-______________________________________________
-Tools used :
-- SQL (Data Analysis)
-- Power BI (Dashboard & Visualization)
-______________________________________________
-Dashboard :
-The dashboard includes:
-- Revenue & Orders trends
-- Top 5 categories
-- Customer distribution
-- Repeat vs one-time customers
-- Customer segmentation
-- Top 5 customers
-______________________________________________
-Conclusion :
-The analysis confirms a major retention issue.
-While causation cannot be fully proven, the data provides strong indications that delivery performance, product nature, and lack of retention strategies contribute to low customer retention.
+## Dataset
 
+| Table | Content |
+|---|---|
+| Orders | Transaction records |
+| Order Items | Product-level detail |
+| Customers | Customer profiles |
+| Products | Product catalog |
+
+---
+
+## Tools
+
+- SQL — Data extraction and analysis
+- Power BI — Dashboard and visualization
+
+---
+
+## Key Findings
+
+**1. Retention is critically low**  
+~96.88% of customers placed only one order. Repeat rate is approximately 3%.
+
+**2. Revenue depends on acquisition, not loyalty**  
+Growth is driven by new customers. Returning customers contribute very little to total revenue.
+
+**3. High-value customers don't return either**  
+Even customers with large first orders showed no repeat behavior.
+
+**4. Possible explanations (not confirmed causes)**  
+Three patterns worth investigating further:
+- Undelivered or late orders may damage the first experience
+- Product type may not naturally encourage repeat purchases
+- No visible retention mechanism (loyalty program, follow-up offers)
+
+> These are observations, not proven root causes. Confirming them would require deeper hypothesis testing — which the later project addresses.
+
+---
+
+## What I Learned From This Project
+
+Analyzing customer behavior in isolation showed the *what* but not the *why*.
+
+A 3% repeat rate is alarming — but without connecting it to revenue structure and order patterns, it's hard to know where to intervene.
+
+This is what led me to combine both analyses into one connected framework:  
+👉 [TheLook E-Commerce — Customer Retention Analysis](https://github.com/MEQDAD0904/thelook-ecommerce-customer-retention-analysis-)
+
+---
+
+## Project Files
+
+| File | Description |
+|---|---|
+| `03_customer_analysis.sql` | SQL queries for customer segmentation |
+| `customer_analysis_overview.png` | Main dashboard overview |
+| `customer_behavior.png` | Customer distribution visual |
+
+---
+
+## How to Run
+
+1. Load the datasets: `orders`, `order_items`, `customers`, `products`
+2. Run `03_customer_analysis.sql`
+3. Open dashboard images to explore visuals
