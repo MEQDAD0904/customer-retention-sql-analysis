@@ -2,7 +2,7 @@
 
 > ⚠️ **Note:** This was an early exploratory project focused on customer behavior only.  
 > It was later connected to the revenue analysis to tell a more complete story:  
-> 👉 [TheLook E-Commerce — Customer Retention Analysis](https://github.com/MEQDAD0904/thelook-ecommerce-customer-retention-analysis-)
+> 👉 (https://github.com/MEQDAD0904/thelook-ecommerce-customer-retention-analysis-](https://github.com/MEQDAD0904/retention-revenue-connection)
 
 ---
 
