@@ -71,7 +71,7 @@ Analyzing customer behavior in isolation showed the *what* but not the *why*.
 A 3% repeat rate is alarming — but without connecting it to revenue structure and order patterns, it's hard to know where to intervene.
 
 This is what led me to combine both analyses into one connected framework:  
-👉 [TheLook E-Commerce — Customer Retention Analysis](https://github.com/MEQDAD0904/thelook-ecommerce-customer-retention-analysis-)
+👉 (https://github.com/MEQDAD0904/retention-revenue-connection)
 
 ---
 
